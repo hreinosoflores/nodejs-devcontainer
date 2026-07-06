@@ -1,0 +1,18 @@
+{
+    "name": "Node.js Dev Container",
+    // Usa una imagen oficial de Node.js desde el registro de contenedores de Microsoft
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+    // Configura las características de VS Code dentro del contenedor
+    "customizations": {
+        "vscode": {
+            // Instala extensiones de VS Code automáticamente para cualquiera que abra el proyecto
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    // Corre este comando dentro del contenedor después de que se cree
+    //"postCreateCommand": "npm install",
+    // Evita que el contenedor se cierre de inmediato
+    "remoteUser": "node"
+}
